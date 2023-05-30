@@ -79,5 +79,5 @@ if __name__ == "__main__":
     x2_test = np.array(data["x2_test"])
     y_test = np.array(data["y_test"])
 
-    # print(model.loss(x1_cross_validation, x2_cross_validation, y_cross_validation))
-    print(model.loss(x1_test, x2_test, y_test))
+    print("cross validation loss:", model.loss(x1_cross_validation, x2_cross_validation, y_cross_validation))
+    print("test loss", model.loss(x1_test, x2_test, y_test))
